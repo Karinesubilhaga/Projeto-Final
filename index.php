@@ -3,17 +3,56 @@
         <title>TODO supply a title</title>
         <meta charset="ISO-8859-1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <link href="bootstrap-3.3.5-dist/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
-        <script src="bootstrap-3.3.5-dist/js/jquery-1.11.3.js" type="text/javascript"></script>
-        <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js" type="text/javascript"></script>
-
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        
+
         <div>Mary Kay</div>
-        <Div  class = "container" > 
-            <div  class = "linha" >
+        <div  class = "container" >
+            <div class="row">  
+                <div class="col-md-3">
+                    <img src="logoMK.png" class="logo">
+                </div>
+                <div class="col-md-5">
+                    <section id="wrapper">
+                        <h1></h1>
+                        <div id="main">
+                            <form>
+                                <input type="text" id="pesquisar" value="Escreva aqui" onFocus="if (this.value == 'Escreva aqui')
+                                            this.value = '';">
+                                <input type="submit" class="solid" value="Pesquisar">
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>         
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                cols
+            </div>
+
+
+            <div class="row">
+                col
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -25,19 +64,26 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img src="logoMK.png" width="137" height="99" >
+                            <img src="make53.png" class="makes" >
                             <div class="carousel-caption">
                                 ...
                             </div>
                         </div>
                         <div class="item">
-                            <img src="logoMK.png" width="137" height="99" >
+                            <img src="mk.png" class="base" >
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="pele53.png" class="pele" >
                             <div class="carousel-caption">
                                 ...
                             </div>
                         </div>
                         ...
                     </div>
+
 
                     <!-- Controls -->
                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -49,7 +95,8 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </Div> 
+                col
+            </div> 
         </div>
     </body>
 </html>
