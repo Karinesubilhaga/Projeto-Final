@@ -15,7 +15,7 @@
                 <div class="col-md-4">
                     <img src="img/logoMK.png" class="logo">
                 </div>
-                <div class="col-md-4">  
+                <div class="col-md-4" al>
                     <section id="wrapper">
                         <h1></h1>
                         <div id="main">
@@ -41,7 +41,7 @@
                         <button type="submit" class="btn btn-default btn-xs">Entrar</button>
                     </form>         
                 </div>
-               </div>
+            </div>
             <nav id="menu">
                 <ul>
                     <li><a href="#">Empresa</a></li>
@@ -82,7 +82,6 @@
                     ...
                 </div>
 
-
                 <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -93,11 +92,14 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="col-md-5">
-                <img 
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="img/treinamento.PNG">
+                </div>
+                <div class="col-md-5">
+                    <img src="img/comprar.jpg"> 
+                </div>
             </div>
-            <div class="col-md-5"></div>
         </div> 
-    </div>
-</body>
+    </body>
 </html>
