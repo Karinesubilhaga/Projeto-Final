@@ -1,0 +1,48 @@
+.container {
+    background-color: #ffcccc;
+}
+.row{
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #ff3366;
+}
+.makes{
+    width: 500px;
+    margin: auto
+    
+}
+.base{
+    width: 500px;
+    margin: auto
+}
+.pele{
+    width: 500px;
+    margin: auto
+}
+.logo{
+    max-width: 100%;
+}
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+#menu ul li { display: inline;
+}
+#menu ul li a {
+	padding: 2px 80px;
+	display: inline-block;
+ 
+	/* visual do link */
+	background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+}
+#menu ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+        border-bottom:3px solid #ff9999;
+}
+
