@@ -44,9 +44,9 @@
             </div>
             <nav id="menu">
                 <ul>
-                    <li><a href="#">Empresa</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Quero ser uma consultora</a></li>
+                    <li><a href="http://www.marykay.com.br/company.html">Empresa</a></li>
+                    <li><a href="http://www.marykay.com.br/products.html">Produtos</a></li>
+                    <li><a href="http://www.marykay.com.br/sellmarykay.html">Quero ser uma consultora</a></li>
                     <li><a href="#">Agende sua sessão de Beleza</a></li>
                 </ul>    
             </nav>        
@@ -94,38 +94,40 @@
             </div>
             <div class="row">
                 <div class="col-md-5">
-                    <img src="img/treinamento.PNG" class="treinamento">;
+                    <img src="img/treinamento.PNG" class="treinamento">
 
                 </div>
                 <div class="col-md-5">
-                    <img src="img/comprar.png" class="compras"> 
+                    <a href="http://marykay.pciims.com.br/consultora.aspx"> <img src="img/comprar.png" class="compras"></a>                   
                 </div>
             </div>
-            <div class="row">
+            <div class="row rodape" >
                 <div class="col-sm-4">
                     <nav id="menuinfdir">
-                        <ul>
-                            <h5>PRODUTOS</h5>
-                                
-                            <li><a href="#">Cuidados com a pele</a></li>
-                            <li><a href="#">Maquiagem</a></li>
-                            <li><a href="#">Frangrâncias</a></li>
+                        <h5 >
+                            PRODUTOS
+                        </h5>
+                        <ul>                            
+                            <li><a href="http://www.marykay.com.br/skincare.html">Cuidados com a pele</a></li>
+                            <li><a href="http://www.marykay.com.br/makeup.html">Maquiagem</a></li>
+                            <li><a href="http://www.marykay.com.br/fragrance.html">Frangrâncias</a></li>
                         </ul>    
                     </nav> 
                 </div>
-                <div class="col-sm-4" class="contato"> 
+                <div class="col-sm-4 contato"> 
                     <h5>CONTATO</h5>
                     <h5>CELULAR 9685.7485</h5>
                     <h5>COMERCIAL 3552.1474</h5>
                     <h5>E-MAIL karinesubilhaga@yahoo.com.br</h5>
-                    
+
                 </div> 
-                <div class="col-sm-4" class="atend">
+                <div class="col-sm-4 atend" > 
                     <h5>HORÁRIO DE ATENDIMENTO</h5>
                     <p>Segunda à Sexta, das 8h às 22h<br>Sabado das 08h às 20h</p>
-
-                </div>
+                    <img src="img/logorodape.jpg">   
+                </div>        
             </div>          
         </div> 
-    </body>
+    </div>
+</body>
 </html>

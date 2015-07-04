@@ -9,7 +9,7 @@
 .makes{
     width: 500px;
     margin: auto
-    
+
 }
 .base{
     width: 500px;
@@ -31,32 +31,50 @@
 #menu ul li { display: inline;
 }
 #menu ul li a {
-	padding: 2px 80px;
-	display: inline-block;
- 
-	/* visual do link */
-	background-color:#EDEDED;
-	color: #333;
-	text-decoration: none;
-	border-bottom:3px solid #EDEDED;
+    padding: 2px 80px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
 }
 #menu ul li a:hover {
-	background-color:#D6D6D6;
-	color: #6D6D6D;
-        border-bottom:3px solid #ff9999;
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #ff9999;
 }
-
 .compras{
-        margin: 50px;
-        margin-right: 50px;
-        
-        
+    margin-left: 70px;
 }
 .treinamento{
-        margin: 50px;
-        
+    margin-right: 100px;
 }
-#menuinfcent{
-    margin: 1em 0 1em 0;
+#menuinfdir{
+    font-size: 16px;
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman";
+}
+.contato{
+    font-size: 18px;
+    font-family: Georgia, "Times New Roman";
+    float: left;
+}
+.atend{
+    font-size: 18px;
+    text-decoration-color: #666666;
+    font-family: Georgia, "Times New Roman";
+    
+}
+#menuinfdir ul{
+    list-style: none
 }
 
+#menuinfdir h5{
+    margin-left: 40px;
+}
+
+.rodape .col-sm-4{
+    text-align: center
+}
