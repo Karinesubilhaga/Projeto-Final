@@ -4,7 +4,7 @@
 .row{
     background-image: url(img/fundo.jpg);
     background-repeat: no-repeat;
-    border-bottom: 3px solid #ff3366;
+    
 }
 .makes{
     width: 500px;
@@ -76,14 +76,19 @@
 }
 
 .rodape .col-sm-4{
-    text-align: center
+    text-align: center;
+    border-top: 3px solid #ff3366;
 }
 .style1 {
     color: #FF0000;
     font-size: x-small;
+    size: '70';
+    maxlength: "60";
 }
 .style3 {
     color: #0000FF;
     font-size: x-small;
+    size: '70';
+    maxlength: "60";
 }
             
