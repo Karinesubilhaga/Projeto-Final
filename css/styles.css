@@ -4,7 +4,7 @@
 .row{
     background-image: url(img/fundo.jpg);
     background-repeat: no-repeat;
-    
+
 }
 .makes{
     width: 500px;
@@ -65,7 +65,7 @@
     font-size: 18px;
     text-decoration-color: #666666;
     font-family: Georgia, "Times New Roman";
-    
+
 }
 #menuinfdir ul{
     list-style: none
@@ -91,4 +91,3 @@
     size: '70';
     maxlength: "60";
 }
-            

@@ -1,18 +1,30 @@
 <?php
-include('inc/index.php');
 
-$con = newDbConnection();
+$login = $_POST['login'];
+$senha = MD5($_POST['senha']);
+$connect = mysql_connect('127.0.0.1', 'root', 'senha');
+$db = mysql_select_db('1','2');
+$query_select = "SELECT login FROM usuarios WHERE login = '$login'";
+$select = mysql_query($query_select, $connect);
+$array = mysql_fetch_array($select);
+$logarray = $array['login'];
 
-$sql = $con->prepare('INSERT INTO user (nome, email, ddd, tel, endereco, cidade, estado, bairro, pais, login, senha, news, sexo) VALUES (?,?,?,?)');
+if ($login == "" || $login == null) {
+    echo"<script language='javascript' type='text/javascript'>alert('O campo login deve ser preenchido');window.location.href='cadastro.html';</script>";
+} else {
+    if ($logarray == $login) {
 
-$name = $_POST['nome'];
-$email = $_POST['email'];
-$senha = sha1($_POST['senha']);
-$active = 1;
-$sql->bind_param('sssi', $nome, $email, $ddd, $tel, $endereco, $cidade, $estado, $bairro, $pais, $login, $senha, $news, $sexo);
+        echo"<script language='javascript' type='text/javascript'>alert('Esse login já existe');window.location.href='cadastro.html';</script>";
+        die();
+    } else {
+        $query = "INSERT INTO usuarios (login,senha) VALUES ('$login','$senha')";
+        $insert = mysql_query($query, $connect);
 
-if (!$sql->execute()) {
-    dd($sql->error);
+        if ($insert) {
+            echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='login.html'</script>";
+        } else {
+            echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');window.location.href='cadastro.html'</script>";
+        }
+    }
 }
 
-header('location:index.php?p=user-form&success=1');
