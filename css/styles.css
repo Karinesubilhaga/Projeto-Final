@@ -33,8 +33,6 @@
 #menu ul li a {
     padding: 2px 80px;
     display: inline-block;
-
-    /* visual do link */
     background-color:#EDEDED;
     color: #333;
     text-decoration: none;

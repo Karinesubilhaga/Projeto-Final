@@ -39,6 +39,7 @@
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
                         <button type="submit" class="btn btn-default btn-xs">Entrar</button>
+                        <button href="cadastro.php"> Não tenho cadastro! Quero me cadastrar!</button>
                     </form>         
                 </div>
             </div>
