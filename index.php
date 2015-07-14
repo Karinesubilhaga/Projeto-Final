@@ -55,7 +55,7 @@ session_start();
             <nav id="menu">
                 <ul>
                     <li><a href="http://www.marykay.com.br/company.html">Empresa</a></li>
-                    <li><a href="http://www.marykay.com.br/products.html">Produtos</a></li>
+                    <li><a href="produto.php">Produtos</a></li>
                     <li><a href="http://www.marykay.com.br/sellmarykay.html">Quero ser uma consultora</a></li>
                     <li><a href="#">Agende sua sessão de Beleza</a></li>
                 </ul>    

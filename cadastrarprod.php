@@ -15,7 +15,7 @@ $query = "INSERT INTO produtos (idProdutos, produto, valor, descricao) VALUES ('
 $insert = mysql_query($query, $connect);
 
 if ($insert) {
-    header('location:produto.php?sucesso=1');
+    header('location:produto.php');
 
 } else {
     echo 'Produto não cadastrado';

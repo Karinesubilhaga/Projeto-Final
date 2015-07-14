@@ -1,0 +1,8 @@
+CREATE TABLE `produtos` (
+  `idProdutos` int(11) NOT NULL DEFAULT '0',
+  `produto` varchar(40) NOT NULL,
+  `valor` varchar(45) NOT NULL,
+  `descricao` varchar(1000) NOT NULL,
+  `estoque` varchar(45) NOT NULL,
+  PRIMARY KEY (`idProdutos`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
