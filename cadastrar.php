@@ -1,4 +1,5 @@
 <?php
+
 //abrir conexão
 $connect = mysql_connect('127.0.0.1', 'root', '');
 $db = mysql_select_db('lp22015');
@@ -17,8 +18,8 @@ if ($insert) {
     header('location:cadastro.php?sucesso=1');
 //    echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='login.html'</script>";
 } else {
-    echo   'não';
-    var_dump(mysql_error());
+    echo 'não';
+
 //    echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');window.location.href='cadastro.html'</script>";
 }
 exit;

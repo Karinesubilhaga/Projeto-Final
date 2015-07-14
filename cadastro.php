@@ -29,14 +29,14 @@
                     </section>
                 </div>
                 <div class="col-md-4">
-                    <form>
+                    <form action="login.php" method="post">
                         <div class="form-group form-group-sm">
                             <!--<label for="exampleInputEmail1">Digite seu e-mail</label>-->
-                            <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Email">
+                            <input type="email" class="form-control " id="exampleInputEmail1" name="email" placeholder="Email">
                         </div>
                         <div class="form-group  form-group-sm">
                             <!--<label for="exampleInputPassword1">Digite sua senha</label>-->
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="senha" placeholder="Password">
                         </div>
                         <button type="submit" class="btn btn-default btn-xs">Entrar</button>
                     </form>         
@@ -51,7 +51,7 @@
                 </ul>    
             </nav>        
 
-            <!--JavaScript que validará os campos obrigatórios! -->
+
             <h3>Preencha seu cadastro</h3>
             <?php if (!empty($_GET['sucesso'])) { ?>
                 <h3 style="color:red">Cadastro realizado com sucesso!</h3> 

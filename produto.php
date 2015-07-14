@@ -15,9 +15,8 @@
                 <div class="col-md-12">
                     <img src="img/logoMK.png" class="logo">
                 </div>
-               
+
             </div>
-            <!--JavaScript que validará os campos obrigatórios! -->
             <h3>Cadastro de Produtos</h3>
             <?php if (!empty($_GET['sucesso'])) { ?>
                 <h3 style="color:red">Cadastro realizado com sucesso!</h3> 
@@ -55,7 +54,7 @@
                         alert("Digite a quantidade de produtos no estoque!");
                         return false;
                     }
-                    
+
                     else
                         return true;
                 }
@@ -89,7 +88,7 @@
                         <td><input name="estoque" type="number" id="estoque" maxlength="12" />
                             <span class="style1">*</span></td>
                     </tr>
-                    
+
                     <tr>
                         <td colspan="2"><p>
                                 <input name="cadastrar" type="submit" id="cadastrar" value="Cadastrar Produto!" />
