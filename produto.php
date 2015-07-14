@@ -12,119 +12,93 @@
     <body>
         <div  class = "container" >
             <div class="row">  
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <img src="img/logoMK.png" class="logo">
                 </div>
-                <div class="col-md-4">
-                    <section id="wrapper">
-                        <h1></h1>
-                        <div id="main">
-                            <form class="form-inline">
-                                <div class="form-group">
-                                    <input  class="form-control"  type="text" id="pesquisar">
-                                    <input type="submit" class="solid btn btn-default btn" value="Pesquisar">
-                                </div>
-                            </form>
-                        </div>
-                    </section>
-                </div>
-                <div class="col-md-4">
-                    <form>
-                        <div class="form-group form-group-sm">
-                            <!--<label for="exampleInputEmail1">Digite seu e-mail</label>-->
-                            <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Email">
-                        </div>
-                        <div class="form-group  form-group-sm">
-                            <!--<label for="exampleInputPassword1">Digite sua senha</label>-->
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <button type="submit" class="btn btn-default btn-xs">Entrar</button>
-                    </form>         
-                </div>
+               
             </div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="http://www.marykay.com.br/company.html">Empresa</a></li>
-                    <li><a href="http://www.marykay.com.br/products.html">Produtos</a></li>
-                    <li><a href="http://www.marykay.com.br/sellmarykay.html">Quero ser uma consultora</a></li>
-                    <li><a href="#">Agende sua sessão de Beleza</a></li>
-                </ul>    
-            </nav>        
-
             <!--JavaScript que validará os campos obrigatórios! -->
-            <h3>Preencha seu cadastro</h3>
+            <h3>Cadastro de Produtos</h3>
             <?php if (!empty($_GET['sucesso'])) { ?>
                 <h3 style="color:red">Cadastro realizado com sucesso!</h3> 
             <?php } ?>
             <script type="text/javascript">
                 function validaCampo()
                 {
-                    if (document.cadastro.nome.value == "")
+                    if (document.cadastro.idproduto.value == "")
                     {
-                        alert("O Campo nome é obrigatório!");
+                        alert("O Campo id do produto é obrigatório!");
                         return false;
                     }
                     else
-                    if (document.cadastro.email.value == "")
+                    if (document.cadastro.nomeproduto.value == "")
                     {
-                        alert("O Campo email é obrigatório!");
+                        alert("O Campo nome do produto é obrigatório!");
                         return false;
                     }
                     else
-                    if (document.cadastro.endereco.value == "")
+                    if (document.cadastro.valor.value == "")
                     {
-                        alert("O Campo endereço é obrigatório!");
+                        alert("O Campo valor do produto é obrigatório!");
+                        return false;
+                    }
+                    else
+                    if (document.cadastro.descricao.value == "")
+                    {
+                        alert("O Campo descrição do produto é obrigatório!");
                         return false;
                     }
 
                     else
-                    if (document.cadastro.senha.value == "")
+                    if (document.cadastro.estoque.value == "")
                     {
-                        alert("Digite uma senha!");
+                        alert("Digite a quantidade de produtos no estoque!");
                         return false;
                     }
+                    
                     else
                         return true;
                 }
             </script>
 
-            <form id="cadastro" name="cadastro" method="post" action="cadastrar.php" onsubmit="return validaCampo();
+            <form id="produto" name="produto" method="post" action="produto.php" onsubmit="return validaCampo();
                     return false;">
                 <table width="625" border="0">
                     <tr>
-                        <td width="69">Nome:</td>
-                        <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" />
+                        <td width="69">Id Produto:</td>
+                        <td width="546"><input name="nome" type="number" id="nome" size="70" maxlength="60" />
                             <span class="style1">*</span></td>
                     </tr>
                     <tr>
-                        <td>Email:</td>
-                        <td><input name="email" type="text" id="email" size="70" maxlength="60" />
+                        <td>Nome:</td>
+                        <td><input name="nome" type="text" id="nome" size="70" maxlength="60" />
                             <span class="style1">*</span></td>
                     </tr>
                     <tr>
-                        <td>Endereço:</td>
-                        <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
+                        <td>Valor:</td>
+                        <td><input name="valor" type="number" id="valor" size="70" maxlength="70" />
                             <span class="style1">*</span></td>
                     </tr>
                     <tr>
-                        <td>Login:</td>
-                        <td><input name="login" type="text" id="login" maxlength="12" />
+                        <td>Descrição:</td>
+                        <td><input name="descricao" type="text" id="descricao" maxlength="12" />
                             <span class="style1">*</span></td>
                     </tr>
                     <tr>
-                        <td>Senha:</td>
-                        <td><input name="senha" type="password" id="senha" maxlength="12" />
+                        <td>Estoque:</td>
+                        <td><input name="estoque" type="number" id="estoque" maxlength="12" />
                             <span class="style1">*</span></td>
                     </tr>
+                    
                     <tr>
                         <td colspan="2"><p>
-                                <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" />
+                                <input name="cadastrar" type="submit" id="cadastrar" value="Cadastrar Produto!" />
 
 
                                 <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
 
 
-                                <span class="style1">* Campos com * são obrigatórios!</span></p>
+                                <span class="style1">* Campos com * são obrigatórios!          </span></p>
                             <p>  </p></td>
                     </tr>
                 </table>
@@ -159,4 +133,5 @@
         </div> 
     </body>
 </html>
+
 
